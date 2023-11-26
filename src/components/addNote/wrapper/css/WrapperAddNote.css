@@ -1,0 +1,7 @@
+.add-note-form {
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+
+    flex-direction: column;
+}

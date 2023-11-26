@@ -1,0 +1,9 @@
+.add-note-textarea {
+    max-height: 117px;
+    min-height: 117px;
+    max-width: 345px;
+    min-width: 345px;
+    padding: 5px;
+
+    resize: none;
+}

@@ -1,0 +1,7 @@
+.note-item {
+    position: relative;
+    width: 244px;
+    padding: 35px 24px;
+
+    border: 1px solid black;
+}

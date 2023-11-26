@@ -1,0 +1,13 @@
+.add-note-button {
+    width: 37px;
+    height: 37px;
+
+    border-radius: 50%;
+    border: 1px solid black;
+    background: #fff;
+
+    transform: translate(-30%, -150%);
+    align-self: flex-end;
+
+    cursor: pointer;
+}

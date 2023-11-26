@@ -1,0 +1,23 @@
+.notes-close-button {
+    position: absolute;
+    top: -36px;
+    right: -36px;
+
+    display: flex;
+
+    width: 36px;
+    height: 36px;
+
+    font-size: 18px;
+
+    border: 1px solid black;
+    border-radius: 50%;
+    background: #fff;
+    color: red;
+
+    transform: translate(-50%, 50%);
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}

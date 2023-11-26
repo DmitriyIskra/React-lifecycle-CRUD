@@ -1,0 +1,7 @@
+.wrapper-app {
+    display: flex;
+    width: 830px;
+    gap: 38px;
+
+    flex-direction: column;
+}
