@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/MainTitleButton.css';
+import styles from './css/MainTitleButton.module.css';
 
 export default function MainTitleButton({callbackUpdate}) {
 
@@ -8,6 +8,6 @@ export default function MainTitleButton({callbackUpdate}) {
     } 
 
     return (
-        <button className='main-title-button' type='button' onClick={onHandlerButtonClick}>U</button>
+        <button className={styles['main-title-button']} type='button' onClick={onHandlerButtonClick}>U</button>
     )
 }

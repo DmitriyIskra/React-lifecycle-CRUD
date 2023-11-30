@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './css/NoteItem.css';
+import styles from './css/NoteItem.module.css';
 
 export default function NoteItem({children, data}) {
   return (
-    <li className='note-item' id={data.id}>
+    <li className={`${styles['item']} note-item`} id={data.id}>
       {children}
       {data.content}
     </li>

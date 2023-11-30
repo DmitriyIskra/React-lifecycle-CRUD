@@ -1,9 +1,9 @@
 import React from 'react';
-import './css/TextAria.css';
+import styles from './css/TextAria.module.css';
 
 export default function AddNoteTextAria() {
   return (
-    <textarea className='add-note-textarea' id='add-note-textarea' name="addNote">
+    <textarea className={styles['add-note-textarea']} id='add-note-textarea' name="addNote">
       
     </textarea>
   )

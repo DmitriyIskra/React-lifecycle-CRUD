@@ -8,13 +8,12 @@ import MainTitleWr from '../components/title/wrapper/MainTitleWr';
 import NotesList from '../components/notes/list/NotesList';
 import WrapperAddNote from '../components/addNote/wrapper/WrapperAddNote';
 
-import './css/WrapperApp.css';
+import styles from './css/WrapperApp.module.css';
 
 
 // Приложение
 export default function WrapperApp() {
   const [notes, setNotes] = useState();
-  let id = useRef();
 
   // получаем массив заметок
   const getNotes = () => {
@@ -43,10 +42,8 @@ export default function WrapperApp() {
     (async () => {
 
       try {
-        console.log(id.current)
         // удаляем
         await _delete(item);
-        id.current = item;
         // загружаем
         getNotes();
       } catch (error) {
@@ -59,15 +56,9 @@ export default function WrapperApp() {
 
   useEffect(getNotes, []);
 
-  useEffect(() => {
-    getNotes();
-    console.log(id.current);
-    console.log('update');
-  }, [id.current]);
-
 
   return (
-    <div className='wrapper-app'>
+    <div className={styles['wrapper-app']}>
         <MainTitleWr callback={getNotes}/>
         { notes?.length === 0 ? 'Add notes' : (
           <NotesList 

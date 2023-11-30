@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './css/AddNoteButton.css';
+import styles from './css/AddNoteButton.module.css';
 
 export default function AddNoteButton() {
   return (
-    <button className='add-note-button'>S</button>
+    <button className={styles['add-note-button']}>S</button>
   )
 }

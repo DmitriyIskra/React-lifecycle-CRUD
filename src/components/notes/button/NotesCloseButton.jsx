@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './css/NotesCloseButton.css';
+import styles from './css/NotesCloseButton.module.css';
 
 export default function NotesCloseButton({callbackDelete}) {
 
@@ -10,6 +10,6 @@ export default function NotesCloseButton({callbackDelete}) {
     }
 
     return (
-        <div className='notes-close-button' onClick={onHandlerClick}>X</div>
+        <div className={styles['notes-close-button']} onClick={onHandlerClick}>X</div>
     )
 }

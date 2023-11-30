@@ -1,7 +1,7 @@
 import React from 'react';
 import { v4 } from 'uuid';
 
-import './css/WrapperAddNote.css';
+import styles from './css/WrapperAddNote.module.css';
 
 import AddNoteLabel from '../label/AddNoteLabel';
 import AddNoteTextAria from '../textArea/AddNoteTextAria';
@@ -24,7 +24,7 @@ export default function WrapperAddNote({callbackAddNote}) {
   }
 
   return (
-    <form className='add-note-form' onSubmit={onHandlerSubmit}>
+    <form className={styles['add-note-form']} onSubmit={onHandlerSubmit}>
         <AddNoteLabel />
         <AddNoteTextAria />
         <AddNoteButton />
